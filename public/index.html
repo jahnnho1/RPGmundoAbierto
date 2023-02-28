@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winds brelsh Semana 32!</title>
+  </head>
+  <link rel="stylesheet" href="css/index.css" />  
+  <body>
+    <section id="seleccionar-mascota">
+      <h1 class="titulo">Winds brelsh Semana 32! 🔥💧🌱</h1>
+      <h2 class="subtitulo">Elige tu mascota:</h2>
+      <div class="tarjetas" id="tarjetas">
+      </div>
+      <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="ver-mapa">
+      <h1 class="titulo"> Recorre el mapa con tu mascota</h1>
+      <canvas id="mapa"></canvas>      
+      <button id="ArrowUp" onmousedown="moverPersonaje('ArrowUp')" onmouseup="detenerPersonaje()">⭫</button>
+      <div>
+        <button id="ArrowLeft" onmousedown="moverPersonaje('ArrowLeft')" onmouseup="detenerPersonaje()">←</button>
+        <button id="ArrowDown" onmousedown="moverPersonaje('ArrowDown')" onmouseup="detenerPersonaje()">￬</button>
+        <button id="ArrowRight" onmousedown="moverPersonaje('ArrowRight')" onmouseup="detenerPersonaje()">→</button>
+      </div>
+    </section>
+
+    <section id="seleccionar-ataque">
+      <h1 class="titulo">Winds brelsh Semana 32! 🔥💧🌱</h1>
+      <h2 class="subtitulo">Selecciona un ataque</h2>
+      <section id="resultadoBatalla"></section>
+      <section id="reiniciar">
+        <button id="boton-reiniciar">Reiniciar</button>
+      </section>
+      <div id="elige-ataque">
+        <p id="seleccion-ataque">
+        </p>
+      </div>
+      <div class="tarjeta-estado">
+        <div class="tarjeta-player">
+          <span id="titulo-jugador" class="tituloMascota"></span>
+          <div id="imgContainerJugador"></div>
+          <p>
+            Ataques <span id="mascota-jugador"></span> 
+            <span id="vidas-jugador">0</span> Realizados
+          </p>
+        </div>
+        <div class="tarjeta-player">
+          <span id="titulo-enemigo" class="tituloMascota"></span>
+          <div id="imgContainerEnemigo"></div>
+          <p>
+            Ataques <span id="mascota-enemigo"></span> 
+            <span id="vidas-enemigo">0</span> Realizados
+          </p>
+        </div>
+      </div>
+      <h2 class="subtituloHistorial">Historial de combate:</h2>
+      <div class="chat-de-combate">
+        <section id="mensajes"></section>
+      </div>
+    </section>
+    <script src="./javascript/logica.js"></script>
+  </body>
+</html>

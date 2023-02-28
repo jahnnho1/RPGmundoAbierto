@@ -1,0 +1,169 @@
+@import "https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap";
+
+body {
+  font-family: fredoka one, cursive;
+  background-color: #5d3891;
+}
+
+.titulo {
+  color: hotpink;
+  height: 50px;
+  text-align: center;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitulo,
+.subtituloHistorial {
+  color: #fff;
+  font-size: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  width: 180px;
+  height: 100px;
+  background: #11468f;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+.tarjeta-de-mokepon:hover {
+  background: rgba(160, 8, 21, 0.5);
+}
+
+#boton-mascota,
+#boton-reiniciar {
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+
+input:checked + label {
+  background-color: #a70909;
+}
+
+#boton-mascota:hover,
+#boton-reiniciar:hover,
+.boton-de-ataque:hover, #ver-mapa button:hover {
+  background-color: #a70909;
+}
+
+input {
+   display: none;
+}
+
+#seleccionar-ataque {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-estado {
+  display: flex;
+  width: 800px;
+  height: 400px;
+}
+
+.tarjeta-player {
+  width: 400px;
+  margin: 10px;
+  background: hsl(265, 68%, 29%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.tarjeta-player img {
+  width: 80px;
+}
+
+#chat-de-combate {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloMascota {
+  color: #fff;
+  font-size: 20px;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+  color: red;
+  font-size: 20px;
+}
+
+.boton-de-ataque {
+  background: hsla(207, 93%, 29%, 0.336);
+  border: solid 1px;
+  border-radius: 30px;
+  color: white;
+  padding: 15px;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+#mapa {
+  border: solid 2px white;
+}
+
+#ver-mapa button {
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1024px)  {
+  .tarjetas {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
